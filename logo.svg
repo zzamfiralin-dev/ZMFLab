@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+  <rect width="240" height="80" fill="white"/>
+  <g transform="translate(10,10)">
+    <rect x="0" y="0" width="60" height="60" rx="8" fill="#000"/>
+    <path d="M15 20 Q20 5 35 20 L40 50 L10 50 Z" fill="white"/>
+  </g>
+  <text x="85" y="48" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="32" fill="#000">ZMFLab</text>
+</svg>

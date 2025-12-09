@@ -1,0 +1,352 @@
+[
+  {
+    "id": "ZMF-BK001",
+    "title": "Set Boluri Bucătărie (3 buc)",
+    "category": "bucatarie",
+    "price": 89.99,
+    "img": "https://images.unsplash.com/photo-1542444459-db0b3ecf89b6?w=800"
+  },
+  {
+    "id": "ZMF-BK002",
+    "title": "Tocător Lemn Premium",
+    "category": "bucatarie",
+    "price": 49.99,
+    "img": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800"
+  },
+  {
+    "id": "ZMF-BK003",
+    "title": "Set Ustensile Silicon (6 piese)",
+    "category": "bucatarie",
+    "price": 59.99,
+    "img": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"
+  },
+  {
+    "id": "ZMF-BK004",
+    "title": "Organizator Sertare Modular",
+    "category": "bucatarie",
+    "price": 39.99,
+    "img": "https://images.unsplash.com/photo-1586201375759-29d2f7f31f66?w=800"
+  },
+  {
+    "id": "ZMF-BK005",
+    "title": "Set Cuțite Oțel Inoxidabil (5 piese)",
+    "category": "bucatarie",
+    "price": 129.99,
+    "img": "https://images.unsplash.com/photo-1602524814321-2f3f4f6a3a2d?w=800"
+  },
+  {
+    "id": "ZMF-BA001",
+    "title": "Suport Periuțe Minimal",
+    "category": "baie",
+    "price": 29.99,
+    "img": "https://images.unsplash.com/photo-1581579188191-6a1a6c6b0a5b?w=800"
+  },
+  {
+    "id": "ZMF-BA002",
+    "title": "Set Prosoape Bumbac (3 buc)",
+    "category": "baie",
+    "price": 79.99,
+    "img": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800"
+  },
+  {
+    "id": "ZMF-BA003",
+    "title": "Dozator Săpun Automat",
+    "category": "baie",
+    "price": 89.99,
+    "img": "https://images.unsplash.com/photo-1616628180126-3d94a8f7b2f5?w=800"
+  },
+  {
+    "id": "ZMF-BA004",
+    "title": "Suport Duș Reglabil",
+    "category": "baie",
+    "price": 69.99,
+    "img": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+  },
+  {
+    "id": "ZMF-BA005",
+    "title": "Set Accesorii Baie (4 piese)",
+    "category": "baie",
+    "price": 99.99,
+    "img": "https://images.unsplash.com/photo-1615874959472-2f0b6b5a5d8b?w=800"
+  },
+  {
+    "id": "ZMF-SF001",
+    "title": "Lampă LED Ambient",
+    "category": "sufragerie",
+    "price": 119.99,
+    "img": "https://images.unsplash.com/photo-1493666438817-866a91353ca9?w=800"
+  },
+  {
+    "id": "ZMF-SF002",
+    "title": "Set Perne Decorative (2 buc)",
+    "category": "sufragerie",
+    "price": 69.99,
+    "img": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800"
+  },
+  {
+    "id": "ZMF-SF003",
+    "title": "Suport/Mască TV Minimal",
+    "category": "sufragerie",
+    "price": 249.99,
+    "img": "https://images.unsplash.com/photo-1505691723518-36a3f6e0f0b2?w=800"
+  },
+  {
+    "id": "ZMF-SF004",
+    "title": "Covor Pufos 120x160",
+    "category": "sufragerie",
+    "price": 199.99,
+    "img": "https://images.unsplash.com/photo-1505692794404-28c58b71b5b6?w=800"
+  },
+  {
+    "id": "ZMF-SF005",
+    "title": "Tablou Abstract - Print",
+    "category": "sufragerie",
+    "price": 129.99,
+    "img": "https://images.unsplash.com/photo-1508385082359-f19b9d6c8a6b?w=800"
+  },
+  {
+    "id": "ZMF-HN001",
+    "title": "Hanorac Unisex - Negru",
+    "category": "haine",
+    "price": 159.99,
+    "img": "https://images.unsplash.com/photo-1520975915503-2cf8a0e6b4a5?w=800"
+  },
+  {
+    "id": "ZMF-HN002",
+    "title": "Tricou Basic Alb",
+    "category": "haine",
+    "price": 49.99,
+    "img": "https://images.unsplash.com/photo-1520975915503-2cf8a0e6b4a5?w=800"
+  },
+  {
+    "id": "ZMF-HN003",
+    "title": "Geacă Toamnă - Gri",
+    "category": "haine",
+    "price": 299.99,
+    "img": "https://images.unsplash.com/photo-1511588878350-9f47c9478b56?w=800"
+  },
+  {
+    "id": "ZMF-HN004",
+    "title": "Pantaloni Jogger",
+    "category": "haine",
+    "price": 119.99,
+    "img": "https://images.unsplash.com/photo-1539883373927-1c8b8e3b8b7d?w=800"
+  },
+  {
+    "id": "ZMF-HN005",
+    "title": "Cămașă Slim Fit",
+    "category": "haine",
+    "price": 129.99,
+    "img": "https://images.unsplash.com/photo-1520975915503-2cf8a0e6b4a5?w=800"
+  },
+  {
+    "id": "ZMF-CS001",
+    "title": "Cutie Depozitare 3L",
+    "category": "casnice",
+    "price": 29.99,
+    "img": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800"
+  },
+  {
+    "id": "ZMF-CS002",
+    "title": "Organizator Haine Pliabil",
+    "category": "casnice",
+    "price": 39.99,
+    "img": "https://images.unsplash.com/photo-1586201375759-29d2f7f31f66?w=800"
+  },
+  {
+    "id": "ZMF-CS003",
+    "title": "Suport Laptop Reglabil",
+    "category": "casnice",
+    "price": 99.99,
+    "img": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800"
+  },
+  {
+    "id": "ZMF-CS004",
+    "title": "Cutie Bijuterii Compactă",
+    "category": "casnice",
+    "price": 59.99,
+    "img": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800"
+  },
+  {
+    "id": "ZMF-BK006",
+    "title": "Set Pahare 6 buc",
+    "category": "bucatarie",
+    "price": 79.99,
+    "img": "https://images.unsplash.com/photo-1503602642458-232111445657?w=800"
+  },
+  {
+    "id": "ZMF-BK007",
+    "title": "Set Oale Oțel Inox (3 piese)",
+    "category": "bucatarie",
+    "price": 229.99,
+    "img": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+  },
+  {
+    "id": "ZMF-BA006",
+    "title": "Perdea Duș Rezistentă",
+    "category": "baie",
+    "price": 39.99,
+    "img": "https://images.unsplash.com/photo-1505691723518-36a3f6e0f0b2?w=800"
+  },
+  {
+    "id": "ZMF-CS005",
+    "title": "Cutie Depozitare Pantofi",
+    "category": "casnice",
+    "price": 24.99,
+    "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
+  },
+  {
+    "id": "ZMF-HN006",
+    "title": "Rucsac Urban Compact",
+    "category": "haine",
+    "price": 149.99,
+    "img": "https://images.unsplash.com/photo-1508896694512-7f0f3d8b6c7f?w=800"
+  },
+  {
+    "id": "ZMF-CS006",
+    "title": "Perne Scaun Confort",
+    "category": "casnice",
+    "price": 34.99,
+    "img": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800"
+  },
+  {
+    "id": "ZMF-BA007",
+    "title": "Suport Prosoape Metalic",
+    "category": "baie",
+    "price": 59.99,
+    "img": "https://images.unsplash.com/photo-1505692794404-28c58b71b5b6?w=800"
+  },
+  {
+    "id": "ZMF-BK008",
+    "title": "Set Farfurii 4 persoane",
+    "category": "bucatarie",
+    "price": 129.99,
+    "img": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=800"
+  },
+  {
+    "id": "ZMF-CS007",
+    "title": "Coș Rufe Pliabil",
+    "category": "casnice",
+    "price": 59.99,
+    "img": "https://images.unsplash.com/photo-1520975915503-2cf8a0e6b4a5?w=800"
+  },
+  {
+    "id": "ZMF-SF006",
+    "title": "Set Lumânări Parfumate",
+    "category": "sufragerie",
+    "price": 49.99,
+    "img": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800"
+  },
+  {
+    "id": "ZMF-CS008",
+    "title": "Uscător Haine Pliabil",
+    "category": "casnice",
+    "price": 99.99,
+    "img": "https://images.unsplash.com/photo-1567016432779-6b3b2f4f8f9b?w=800"
+  },
+  {
+    "id": "ZMF-SF007",
+    "title": "Bandă LED Ambianță",
+    "category": "sufragerie",
+    "price": 69.99,
+    "img": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800"
+  },
+  {
+    "id": "ZMF-SF008",
+    "title": "Panou Decorativ Geometric",
+    "category": "sufragerie",
+    "price": 159.99,
+    "img": "https://images.unsplash.com/photo-1493666438817-866a91353ca9?w=800"
+  },
+  {
+    "id": "ZMF-CS009",
+    "title": "Set Perii Curățenie (4 piese)",
+    "category": "casnice",
+    "price": 39.99,
+    "img": "https://images.unsplash.com/photo-1581579188191-6a1a6c6b0a5b?w=800"
+  },
+  {
+    "id": "ZMF-BK009",
+    "title": "Termos Inoxidabil 500ml",
+    "category": "bucatarie",
+    "price": 89.99,
+    "img": "https://images.unsplash.com/photo-1542444459-db0b3ecf89b6?w=800"
+  },
+  {
+    "id": "ZMF-CS010",
+    "title": "Suport Chei Montaj Perete",
+    "category": "casnice",
+    "price": 29.99,
+    "img": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800"
+  },
+  {
+    "id": "ZMF-BK010",
+    "title": "Set Capace Silicon Reutilizabile",
+    "category": "bucatarie",
+    "price": 24.99,
+    "img": "https://images.unsplash.com/photo-1542444459-db0b3ecf89b6?w=800"
+  },
+  {
+    "id": "ZMF-CS011",
+    "title": "Covoraș Intrare Antiderapant",
+    "category": "casnice",
+    "price": 39.99,
+    "img": "https://images.unsplash.com/photo-1503602642458-232111445657?w=800"
+  },
+  {
+    "id": "ZMF-CS012",
+    "title": "Cuier Metalic Negru",
+    "category": "casnice",
+    "price": 89.99,
+    "img": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800"
+  },
+  {
+    "id": "ZMF-SF009",
+    "title": "Vază Ceramică Minimală",
+    "category": "sufragerie",
+    "price": 79.99,
+    "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
+  },
+  {
+    "id": "ZMF-BA008",
+    "title": "Cutie Organizare Baie",
+    "category": "baie",
+    "price": 34.99,
+    "img": "https://images.unsplash.com/photo-1504691342889-3f6b4d8b3f20?w=800"
+  },
+  {
+    "id": "ZMF-CS013",
+    "title": "Set Coșuri Organizare",
+    "category": "casnice",
+    "price": 69.99,
+    "img": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800"
+  },
+  {
+    "id": "ZMF-SF010",
+    "title": "Ceas Perete Modern",
+    "category": "sufragerie",
+    "price": 99.99,
+    "img": "https://images.unsplash.com/photo-1505692794404-28c58b71b5b6?w=800"
+  },
+  {
+    "id": "ZMF-BK011",
+    "title": "Set Recipiente Sticlă 3x500ml",
+    "category": "bucatarie",
+    "price": 59.99,
+    "img": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+  },
+  {
+    "id": "ZMF-CS014",
+    "title": "Suport Telefon Desktop",
+    "category": "casnice",
+    "price": 24.99,
+    "img": "https://images.unsplash.com/photo-1542444459-db0b3ecf89b6?w=800"
+  },
+  {
+    "id": "ZMF-CS015",
+    "title": "Perie Podele Multi-Suprafețe",
+    "category": "casnice",
+    "price": 49.99,
+    "img": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800"
+  }
+]
