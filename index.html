@@ -1,7 +1,145 @@
-<!DOCTYPE html><html lang='ro'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ZMFLab - Home</title><link rel='stylesheet' href='style.css'></head><body>
-<header><div class='header-inner'><div class='logo'><img src='logo.svg' alt='ZMFLab logo'/></div><nav><a href='index.html'>Home</a><a href='bucatarie.html'>Bucătărie</a><a href='baie.html'>Baie</a><a href='sufragerie.html'>Sufragerie</a><a href='haine.html'>Haine</a><a href='despre.html'>Despre</a><a href='contact.html'>Contact</a></nav><div class='topbar'><button class='cart-btn cart-toggle' onclick='openCart()'>Coș (<span id='cartCount'>0</span>)</button><button class='cart-btn' onclick='toggleTheme()'>Dark</button></div></div></header>
-<div class='container'><h2>Bun venit la ZMFLab</h2><p>Produse moderne pentru casă și modă.</p><div style='margin:18px 0'><a class='btn' href='bucatarie.html'>Bucătărie</a> <a class='btn' href='baie.html'>Baie</a> <a class='btn' href='sufragerie.html'>Sufragerie</a> <a class='btn' href='haine.html'>Haine</a></div><h3>Produse recomandate</h3><div class='grid'><div class='card'><img src='https://images.unsplash.com/photo-1542444459-db0b3ecf89b6?w=800' alt=''/><h3>Set Boluri Bucătărie (3 buc)</h3><div class='product-meta'>Bucatarie • 89.99 RON</div><p>Scurtă descriere.</p><div style='margin-top:auto'><a class='btn' href='product_ZMF-BK001.html'>Vezi</a> <a class='cart-btn' onclick="addToCart('ZMF-BK001','Set Boluri Bucătărie (3 buc)',89.99)">Adaugă</a></div></div><div class='card'><img src='https://images.unsplash.com/photo-1544025162-d76694265947?w=800' alt=''/><h3>Tocător Lemn Premium</h3><div class='product-meta'>Bucatarie • 49.99 RON</div><p>Scurtă descriere.</p><div style='margin-top:auto'><a class='btn' href='product_ZMF-BK002.html'>Vezi</a> <a class='cart-btn' onclick="addToCart('ZMF-BK002','Tocător Lemn Premium',49.99)">Adaugă</a></div></div><div class='card'><img src='https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800' alt=''/><h3>Set Ustensile Silicon (6 piese)</h3><div class='product-meta'>Bucatarie • 59.99 RON</div><p>Scurtă descriere.</p><div style='margin-top:auto'><a class='btn' href='product_ZMF-BK003.html'>Vezi</a> <a class='cart-btn' onclick="addToCart('ZMF-BK003','Set Ustensile Silicon (6 piese)',59.99)">Adaugă</a></div></div><div class='card'><img src='https://images.unsplash.com/photo-1586201375759-29d2f7f31f66?w=800' alt=''/><h3>Organizator Sertare Modular</h3><div class='product-meta'>Bucatarie • 39.99 RON</div><p>Scurtă descriere.</p><div style='margin-top:auto'><a class='btn' href='product_ZMF-BK004.html'>Vezi</a> <a class='cart-btn' onclick="addToCart('ZMF-BK004','Organizator Sertare Modular',39.99)">Adaugă</a></div></div><div class='card'><img src='https://images.unsplash.com/photo-1602524814321-2f3f4f6a3a2d?w=800' alt=''/><h3>Set Cuțite Oțel Inoxidabil (5 piese)</h3><div class='product-meta'>Bucatarie • 129.99 RON</div><p>Scurtă descriere.</p><div style='margin-top:auto'><a class='btn' href='product_ZMF-BK005.html'>Vezi</a> <a class='cart-btn' onclick="addToCart('ZMF-BK005','Set Cuțite Oțel Inoxidabil (5 piese)',129.99)">Adaugă</a></div></div><div class='card'><img src='https://images.unsplash.com/photo-1581579188191-6a1a6c6b0a5b?w=800' alt=''/><h3>Suport Periuțe Minimal</h3><div class='product-meta'>Baie • 29.99 RON</div><p>Scurtă descriere.</p><div style='margin-top:auto'><a class='btn' href='product_ZMF-BA001.html'>Vezi</a> <a class='cart-btn' onclick="addToCart('ZMF-BA001','Suport Periuțe Minimal',29.99)">Adaugă</a></div></div><div class='card'><img src='https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800' alt=''/><h3>Set Prosoape Bumbac (3 buc)</h3><div class='product-meta'>Baie • 79.99 RON</div><p>Scurtă descriere.</p><div style='margin-top:auto'><a class='btn' href='product_ZMF-BA002.html'>Vezi</a> <a class='cart-btn' onclick="addToCart('ZMF-BA002','Set Prosoape Bumbac (3 buc)',79.99)">Adaugă</a></div></div><div class='card'><img src='https://images.unsplash.com/photo-1616628180126-3d94a8f7b2f5?w=800' alt=''/><h3>Dozator Săpun Automat</h3><div class='product-meta'>Baie • 89.99 RON</div><p>Scurtă descriere.</p><div style='margin-top:auto'><a class='btn' href='product_ZMF-BA003.html'>Vezi</a> <a class='cart-btn' onclick="addToCart('ZMF-BA003','Dozator Săpun Automat',89.99)">Adaugă</a></div></div></div><div id='cartSidebar' class='cart-sidebar'><button onclick='closeCart()' style='float:right'>Închide</button><h3>Coșul tău</h3><div id='cartItems'></div></div></div>
-<footer class='footer'>&copy; 2025 ZMFLab</footer>
-<script src='script.js'></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GandimEconomiaRO</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#222}
+header{background:#1e3a5f;color:white;padding:30px;text-align:center}
+section{max-width:900px;margin:auto;padding:20px}
+.idea{background:white;padding:20px;margin:15px 0;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+.quiz{background:white;padding:20px;margin:20px 0;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+button{padding:10px 20px;font-size:16px;background:#1e3a5f;color:white;border:none;border-radius:5px;cursor:pointer}
+.result{font-size:20px;margin-top:20px;font-weight:bold}
+</style>
+</head>
+<body>
+
+<header>
+<h1>GandimEconomiaRO</h1>
+<p>Proiect educațional: Gândim economia în mod responsabil</p>
+</header>
+
+<section>
+<h2>10 idei importante pentru a înțelege economia responsabil</h2>
+
+<div class="idea"><h3>1. Bugetul personal</h3>
+<p>Bugetul personal înseamnă să știi câți bani câștigi și pe ce îi cheltuiești. O planificare bună te ajută să eviți datoriile și să economisești.</p></div>
+
+<div class="idea"><h3>2. Economisirea</h3>
+<p>Economisirea înseamnă să pui deoparte o parte din bani pentru viitor. Este importantă pentru situații neprevăzute sau investiții.</p></div>
+
+<div class="idea"><h3>3. Diferența dintre nevoie și dorință</h3>
+<p>Nevoile sunt lucruri esențiale precum mâncarea sau locuința. Dorințele sunt lucruri care ne plac, dar fără de care putem trăi.</p></div>
+
+<div class="idea"><h3>4. Consum responsabil</h3>
+<p>Consumatorii responsabili cumpără doar ceea ce au nevoie și încearcă să reducă risipa.</p></div>
+
+<div class="idea"><h3>5. Rolul muncii</h3>
+<p>Munca este principala sursă de venit pentru majoritatea oamenilor și contribuie la dezvoltarea economiei.</p></div>
+
+<div class="idea"><h3>6. Impozitele</h3>
+<p>Impozitele sunt contribuțiile plătite statului pentru servicii publice precum educația, sănătatea sau infrastructura.</p></div>
+
+<div class="idea"><h3>7. Antreprenoriatul</h3>
+<p>Antreprenorii creează afaceri, locuri de muncă și produse noi pentru societate.</p></div>
+
+<div class="idea"><h3>8. Investițiile</h3>
+<p>Investițiile înseamnă folosirea banilor pentru a genera profit pe termen lung.</p></div>
+
+<div class="idea"><h3>9. Economia durabilă</h3>
+<p>Economia durabilă înseamnă folosirea resurselor fără a afecta generațiile viitoare.</p></div>
+
+<div class="idea"><h3>10. Responsabilitatea financiară</h3>
+<p>Responsabilitatea financiară presupune luarea unor decizii inteligente legate de bani.</p></div>
+
+<h2>Quiz - Testează ce ai învățat</h2>
+
+<div class="quiz">
+<form id="quizForm">
+
+<p>1. Ce este un buget personal?</p>
+<label><input type="radio" name="q1" value="a"> a) Planul veniturilor și cheltuielilor</label><br>
+<label><input type="radio" name="q1" value="b"> b) Un tip de taxă</label><br>
+<label><input type="radio" name="q1" value="c"> c) O investiție</label><br>
+<label><input type="radio" name="q1" value="d"> d) Un salariu</label>
+
+<p>2. Economisirea înseamnă:</p>
+<label><input type="radio" name="q2" value="a"> a) Cheltuirea banilor</label><br>
+<label><input type="radio" name="q2" value="b"> b) Păstrarea unei părți din bani</label><br>
+<label><input type="radio" name="q2" value="c"> c) Împrumutarea banilor</label><br>
+<label><input type="radio" name="q2" value="d"> d) Pierderea banilor</label>
+
+<p>3. Nevoile sunt:</p>
+<label><input type="radio" name="q3" value="a"> a) Lucruri esențiale</label><br>
+<label><input type="radio" name="q3" value="b"> b) Lucruri inutile</label><br>
+<label><input type="radio" name="q3" value="c"> c) Jocuri</label><br>
+<label><input type="radio" name="q3" value="d"> d) Vacanțe</label>
+
+<p>4. Consum responsabil înseamnă:</p>
+<label><input type="radio" name="q4" value="a"> a) Risipă</label><br>
+<label><input type="radio" name="q4" value="b"> b) Cumpărături excesive</label><br>
+<label><input type="radio" name="q4" value="c"> c) Cumpărăm doar ce avem nevoie</label><br>
+<label><input type="radio" name="q4" value="d"> d) Nu cumpărăm nimic</label>
+
+<p>5. Impozitele sunt:</p>
+<label><input type="radio" name="q5" value="a"> a) bani plătiți statului</label><br>
+<label><input type="radio" name="q5" value="b"> b) cadouri</label><br>
+<label><input type="radio" name="q5" value="c"> c) reduceri</label><br>
+<label><input type="radio" name="q5" value="d"> d) economii</label>
+
+<p>6. Antreprenorii:</p>
+<label><input type="radio" name="q6" value="a"> a) creează afaceri</label><br>
+<label><input type="radio" name="q6" value="b"> b) distrug economia</label><br>
+<label><input type="radio" name="q6" value="c"> c) nu muncesc</label><br>
+<label><input type="radio" name="q6" value="d"> d) doar cheltuie bani</label>
+
+<p>7. Investițiile sunt:</p>
+<label><input type="radio" name="q7" value="a"> a) bani aruncați</label><br>
+<label><input type="radio" name="q7" value="b"> b) folosirea banilor pentru profit</label><br>
+<label><input type="radio" name="q7" value="c"> c) datorii</label><br>
+<label><input type="radio" name="q7" value="d"> d) taxe</label>
+
+<p>8. Economia durabilă:</p>
+<label><input type="radio" name="q8" value="a"> a) consumă toate resursele</label><br>
+<label><input type="radio" name="q8" value="b"> b) protejează resursele pentru viitor</label><br>
+<label><input type="radio" name="q8" value="c"> c) nu produce nimic</label><br>
+<label><input type="radio" name="q8" value="d"> d) ignoră mediul</label>
+
+<p>9. Responsabilitatea financiară înseamnă:</p>
+<label><input type="radio" name="q9" value="a"> a) decizii inteligente despre bani</label><br>
+<label><input type="radio" name="q9" value="b"> b) cheltuieli impulsive</label><br>
+<label><input type="radio" name="q9" value="c"> c) împrumuturi inutile</label><br>
+<label><input type="radio" name="q9" value="d"> d) pierderi financiare</label>
+
+<p>10. Economisirea ajută la:</p>
+<label><input type="radio" name="q10" value="a"> a) probleme financiare</label><br>
+<label><input type="radio" name="q10" value="b"> b) risipă</label><br>
+<label><input type="radio" name="q10" value="c"> c) siguranță financiară</label><br>
+<label><input type="radio" name="q10" value="d"> d) datorii</label>
+
+<br><br>
+<button type="button" onclick="checkQuiz()">Verifică răspunsurile</button>
+
+</form>
+
+<div class="result" id="result"></div>
+</div>
+
+</section>
+
+<script>
+function checkQuiz(){
+let answers={q1:'a',q2:'b',q3:'a',q4:'c',q5:'a',q6:'a',q7:'b',q8:'b',q9:'a',q10:'c'};
+let score=0;
+for(let q in answers){
+let selected=document.querySelector(`input[name="${q}"]:checked`);
+if(selected && selected.value===answers[q]) score++;
+}
+document.getElementById("result").innerText="Ai obținut "+score+" din 10 puncte!";
+}
+</script>
+
+</body>
+</html>
