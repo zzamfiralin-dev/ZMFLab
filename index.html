@@ -5,139 +5,232 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GandimEconomiaRO</title>
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#222}
-header{background:#1e3a5f;color:white;padding:30px;text-align:center}
-section{max-width:900px;margin:auto;padding:20px}
-.idea{background:white;padding:20px;margin:15px 0;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
-.quiz{background:white;padding:20px;margin:20px 0;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
-button{padding:10px 20px;font-size:16px;background:#1e3a5f;color:white;border:none;border-radius:5px;cursor:pointer}
-.result{font-size:20px;margin-top:20px;font-weight:bold}
+:root{--bg:#ffffff;--text:#111;--card:#f2f2f2;--accent:#c1121f}
+body.dark{--bg:#111;--text:#f5f5f5;--card:#1e1e1e}
+
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);transition:.3s}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 30px;background:black;color:white;position:sticky;top:0}
+nav a{color:white;text-decoration:none;margin-left:20px}
+nav a:hover{color:#c1121f}
+
+header{padding:80px 20px;text-align:center;background:linear-gradient(120deg,#000,#c1121f);color:white}
+.hero-title{font-size:44px;font-weight:bold}
+.hero-sub{opacity:.9;margin-top:10px}
+
+.container{max-width:1000px;margin:auto;padding:20px}
+
+.idea{background:var(--card);padding:20px;border-radius:10px;margin-bottom:20px;display:flex;gap:15px;align-items:flex-start;opacity:0;transform:translateY(30px);transition:.6s}
+.idea.show{opacity:1;transform:translateY(0)}
+.icon{font-size:26px}
+
+.section{margin-top:40px}
+
+.quiz{background:var(--card);padding:20px;border-radius:10px;margin-top:20px}
+
+button{background:#c1121f;color:white;border:none;padding:10px 16px;border-radius:6px;cursor:pointer}
+button:hover{opacity:.9}
+
+.darkbtn{position:fixed;top:20px;right:20px}
+
+.question{margin-bottom:25px}
+.correct{color:green;font-weight:bold}
+.wrong{color:red;font-weight:bold}
+.explain{font-size:14px;opacity:.8}
+
+.progress{height:20px;background:#ddd;border-radius:20px;overflow:hidden;margin-bottom:20px}
+.progressbar{height:100%;width:0%;background:#c1121f;transition:.5s}
+
+#score{font-size:22px;margin-top:20px;font-weight:bold}
+
+.certificate{display:none;margin-top:20px;padding:20px;border:2px dashed #c1121f;border-radius:10px;text-align:center}
+
+.confetti{position:fixed;width:10px;height:10px;animation:fall 3s linear infinite}
+@keyframes fall{0%{transform:translateY(-10px) rotate(0)}100%{transform:translateY(100vh) rotate(360deg)}}
+
+footer{text-align:center;padding:30px;opacity:.7}
 </style>
 </head>
 <body>
 
+<button class="darkbtn" onclick="toggleDark()">Dark Mode</button>
+
+<nav>
+<div><b>GandimEconomiaRO</b></div>
+<div>
+<a href="#idei">Idei</a>
+<a href="#quiz">Quiz</a>
+</div>
+</nav>
+
 <header>
-<h1>GandimEconomiaRO</h1>
-<p>Proiect educațional: Gândim economia în mod responsabil</p>
+<div class="hero-title">GandimEconomiaRO</div>
+<div class="hero-sub">Proiect educațional despre economie responsabilă</div>
 </header>
 
-<section>
-<h2>10 idei importante pentru a înțelege economia responsabil</h2>
+<div class="container">
 
-<div class="idea"><h3>1. Bugetul personal</h3>
-<p>Bugetul personal înseamnă să știi câți bani câștigi și pe ce îi cheltuiești. O planificare bună te ajută să eviți datoriile și să economisești.</p></div>
+<div id="idei" class="section">
+<h2>10 Idei Importante</h2>
 
-<div class="idea"><h3>2. Economisirea</h3>
-<p>Economisirea înseamnă să pui deoparte o parte din bani pentru viitor. Este importantă pentru situații neprevăzute sau investiții.</p></div>
-
-<div class="idea"><h3>3. Diferența dintre nevoie și dorință</h3>
-<p>Nevoile sunt lucruri esențiale precum mâncarea sau locuința. Dorințele sunt lucruri care ne plac, dar fără de care putem trăi.</p></div>
-
-<div class="idea"><h3>4. Consum responsabil</h3>
-<p>Consumatorii responsabili cumpără doar ceea ce au nevoie și încearcă să reducă risipa.</p></div>
-
-<div class="idea"><h3>5. Rolul muncii</h3>
-<p>Munca este principala sursă de venit pentru majoritatea oamenilor și contribuie la dezvoltarea economiei.</p></div>
-
-<div class="idea"><h3>6. Impozitele</h3>
-<p>Impozitele sunt contribuțiile plătite statului pentru servicii publice precum educația, sănătatea sau infrastructura.</p></div>
-
-<div class="idea"><h3>7. Antreprenoriatul</h3>
-<p>Antreprenorii creează afaceri, locuri de muncă și produse noi pentru societate.</p></div>
-
-<div class="idea"><h3>8. Investițiile</h3>
-<p>Investițiile înseamnă folosirea banilor pentru a genera profit pe termen lung.</p></div>
-
-<div class="idea"><h3>9. Economia durabilă</h3>
-<p>Economia durabilă înseamnă folosirea resurselor fără a afecta generațiile viitoare.</p></div>
-
-<div class="idea"><h3>10. Responsabilitatea financiară</h3>
-<p>Responsabilitatea financiară presupune luarea unor decizii inteligente legate de bani.</p></div>
-
-<h2>Quiz - Testează ce ai învățat</h2>
-
-<div class="quiz">
-<form id="quizForm">
-
-<p>1. Ce este un buget personal?</p>
-<label><input type="radio" name="q1" value="a"> a) Planul veniturilor și cheltuielilor</label><br>
-<label><input type="radio" name="q1" value="b"> b) Un tip de taxă</label><br>
-<label><input type="radio" name="q1" value="c"> c) O investiție</label><br>
-<label><input type="radio" name="q1" value="d"> d) Un salariu</label>
-
-<p>2. Economisirea înseamnă:</p>
-<label><input type="radio" name="q2" value="a"> a) Cheltuirea banilor</label><br>
-<label><input type="radio" name="q2" value="b"> b) Păstrarea unei părți din bani</label><br>
-<label><input type="radio" name="q2" value="c"> c) Împrumutarea banilor</label><br>
-<label><input type="radio" name="q2" value="d"> d) Pierderea banilor</label>
-
-<p>3. Nevoile sunt:</p>
-<label><input type="radio" name="q3" value="a"> a) Lucruri esențiale</label><br>
-<label><input type="radio" name="q3" value="b"> b) Lucruri inutile</label><br>
-<label><input type="radio" name="q3" value="c"> c) Jocuri</label><br>
-<label><input type="radio" name="q3" value="d"> d) Vacanțe</label>
-
-<p>4. Consum responsabil înseamnă:</p>
-<label><input type="radio" name="q4" value="a"> a) Risipă</label><br>
-<label><input type="radio" name="q4" value="b"> b) Cumpărături excesive</label><br>
-<label><input type="radio" name="q4" value="c"> c) Cumpărăm doar ce avem nevoie</label><br>
-<label><input type="radio" name="q4" value="d"> d) Nu cumpărăm nimic</label>
-
-<p>5. Impozitele sunt:</p>
-<label><input type="radio" name="q5" value="a"> a) bani plătiți statului</label><br>
-<label><input type="radio" name="q5" value="b"> b) cadouri</label><br>
-<label><input type="radio" name="q5" value="c"> c) reduceri</label><br>
-<label><input type="radio" name="q5" value="d"> d) economii</label>
-
-<p>6. Antreprenorii:</p>
-<label><input type="radio" name="q6" value="a"> a) creează afaceri</label><br>
-<label><input type="radio" name="q6" value="b"> b) distrug economia</label><br>
-<label><input type="radio" name="q6" value="c"> c) nu muncesc</label><br>
-<label><input type="radio" name="q6" value="d"> d) doar cheltuie bani</label>
-
-<p>7. Investițiile sunt:</p>
-<label><input type="radio" name="q7" value="a"> a) bani aruncați</label><br>
-<label><input type="radio" name="q7" value="b"> b) folosirea banilor pentru profit</label><br>
-<label><input type="radio" name="q7" value="c"> c) datorii</label><br>
-<label><input type="radio" name="q7" value="d"> d) taxe</label>
-
-<p>8. Economia durabilă:</p>
-<label><input type="radio" name="q8" value="a"> a) consumă toate resursele</label><br>
-<label><input type="radio" name="q8" value="b"> b) protejează resursele pentru viitor</label><br>
-<label><input type="radio" name="q8" value="c"> c) nu produce nimic</label><br>
-<label><input type="radio" name="q8" value="d"> d) ignoră mediul</label>
-
-<p>9. Responsabilitatea financiară înseamnă:</p>
-<label><input type="radio" name="q9" value="a"> a) decizii inteligente despre bani</label><br>
-<label><input type="radio" name="q9" value="b"> b) cheltuieli impulsive</label><br>
-<label><input type="radio" name="q9" value="c"> c) împrumuturi inutile</label><br>
-<label><input type="radio" name="q9" value="d"> d) pierderi financiare</label>
-
-<p>10. Economisirea ajută la:</p>
-<label><input type="radio" name="q10" value="a"> a) probleme financiare</label><br>
-<label><input type="radio" name="q10" value="b"> b) risipă</label><br>
-<label><input type="radio" name="q10" value="c"> c) siguranță financiară</label><br>
-<label><input type="radio" name="q10" value="d"> d) datorii</label>
-
-<br><br>
-<button type="button" onclick="checkQuiz()">Verifică răspunsurile</button>
-
-</form>
-
-<div class="result" id="result"></div>
+<div class="idea"><div class="icon">💰</div><div>Economisirea banilor oferă siguranță financiară pe termen lung.</div></div>
+<div class="idea"><div class="icon">🛒</div><div>Consumul responsabil înseamnă să cumpărăm doar ceea ce avem nevoie.</div></div>
+<div class="idea"><div class="icon">📊</div><div>Bugetul personal ajută la controlul cheltuielilor.</div></div>
+<div class="idea"><div class="icon">📈</div><div>Investițiile pot ajuta la creșterea economiilor.</div></div>
+<div class="idea"><div class="icon">🌍</div><div>Resursele economice sunt limitate.</div></div>
+<div class="idea"><div class="icon">🏷️</div><div>Cererea și oferta influențează prețurile.</div></div>
+<div class="idea"><div class="icon">🎓</div><div>Educația financiară duce la decizii mai bune.</div></div>
+<div class="idea"><div class="icon">💳</div><div>Datoriile trebuie gestionate responsabil.</div></div>
+<div class="idea"><div class="icon">🏭</div><div>Productivitatea influențează economia.</div></div>
+<div class="idea"><div class="icon">🧠</div><div>Deciziile financiare bune duc la stabilitate.</div></div>
 </div>
 
-</section>
+<div id="quiz" class="section">
+<h2>Quiz</h2>
+
+<div class="quiz">
+<div class="progress"><div class="progressbar" id="progress"></div></div>
+
+<form id="quizForm"></form>
+
+<button onclick="checkQuiz()">Verifică răspunsurile</button>
+
+<div id="score"></div>
+
+<div class="certificate" id="cert">
+<h3>Certificat</h3>
+<p>Felicitări! Ai obținut un scor foarte bun la testul de economie responsabilă.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+Proiect educațional – GandimEconomiaRO
+</footer>
 
 <script>
-function checkQuiz(){
-let answers={q1:'a',q2:'b',q3:'a',q4:'c',q5:'a',q6:'a',q7:'b',q8:'b',q9:'a',q10:'c'};
-let score=0;
-for(let q in answers){
-let selected=document.querySelector(`input[name="${q}"]:checked`);
-if(selected && selected.value===answers[q]) score++;
+function toggleDark(){document.body.classList.toggle('dark')}
+
+const ideas=document.querySelectorAll('.idea')
+window.addEventListener('scroll',()=>{
+ideas.forEach(el=>{
+const pos=el.getBoundingClientRect().top
+if(pos<window.innerHeight-50){el.classList.add('show')}
+})
+})
+
+const questions=[
+{
+q:"Ce înseamnă economisirea?",
+a:["Cheltuirea tuturor banilor","Păstrarea unei părți din bani","Împrumut","Donație"],
+correct:1,
+exp:"Economisirea înseamnă să păstrezi o parte din bani pentru viitor."
+},
+{
+q:"Bugetul personal ajută la:",
+a:["Organizarea banilor","Pierderea banilor","Ignorarea cheltuielilor","Nimic"],
+correct:0,
+exp:"Un buget te ajută să îți organizezi veniturile și cheltuielile."
+},
+{
+q:"Resursele economice sunt:",
+a:["Infinite","Limitate","Fără valoare","Inutile"],
+correct:1,
+exp:"Resursele sunt limitate, de aceea trebuie folosite eficient."
+},
+{
+q:"Cererea și oferta influențează:",
+a:["Prețul","Vremea","Educația","Sănătatea"],
+correct:0,
+exp:"Prețurile cresc sau scad în funcție de cerere și ofertă."
+},
+{
+q:"Investițiile pot:",
+a:["Crește economiile","Distruge economia","Nu contează","Nu există"],
+correct:0,
+exp:"Investițiile pot genera profit pe termen lung."
+},
+{
+q:"Consumul responsabil înseamnă:",
+a:["Să cumpărăm tot","Să cumpărăm ce avem nevoie","Să aruncăm produse","Să risipim bani"],
+correct:1,
+exp:"Consumul responsabil evită risipa."
+},
+{
+q:"Educația financiară ajută la:",
+a:["Decizii mai bune","Cheltuieli haotice","Pierderi","Nimic"],
+correct:0,
+exp:"Educația financiară îmbunătățește deciziile economice."
+},
+{
+q:"Datoriile trebuie:",
+a:["Ignorate","Gestionate responsabil","Mărite","Uitate"],
+correct:1,
+exp:"Datoriile trebuie planificate și plătite responsabil."
+},
+{
+q:"Productivitatea influențează:",
+a:["Economia","Culorile","Muzica","Nimic"],
+correct:0,
+exp:"Productivitatea crește dezvoltarea economică."
+},
+{
+q:"Deciziile financiare bune duc la:",
+a:["Stabilitate","Probleme","Haos","Pierderi"],
+correct:0,
+exp:"Deciziile bune creează stabilitate financiară."
 }
-document.getElementById("result").innerText="Ai obținut "+score+" din 10 puncte!";
+]
+
+const form=document.getElementById("quizForm")
+
+questions.forEach((q,i)=>{
+let html=`<div class='question'><p>${i+1}. ${q.q}</p>`
+q.a.forEach((ans,index)=>{
+html+=`<label><input type='radio' name='q${i}' value='${index}'> ${ans}</label><br>`
+})
+html+=`<div id='r${i}'></div></div>`
+form.innerHTML+=html
+})
+
+function checkQuiz(){
+let score=0
+questions.forEach((q,i)=>{
+let sel=document.querySelector(`input[name=q${i}]:checked`)
+let r=document.getElementById("r"+i)
+
+if(sel){
+if(Number(sel.value)===q.correct){
+score++
+r.innerHTML=`<div class='correct'>Corect</div><div class='explain'>${q.exp}</div>`
+}else{
+r.innerHTML=`<div class='wrong'>Greșit</div><div class='explain'>${q.exp}</div>`
+}
+}else{
+r.innerHTML="<div class='wrong'>Nu ai răspuns</div>"
+}
+})
+
+let percent=(score/10)*100
+document.getElementById('progress').style.width=percent+'%'
+
+document.getElementById('score').innerText="Scor final: "+score+" / 10"
+
+if(score>=8){confetti();document.getElementById('cert').style.display='block'}
+}
+
+function confetti(){
+for(let i=0;i<80;i++){
+let c=document.createElement('div')
+c.className='confetti'
+c.style.left=Math.random()*100+'vw'
+c.style.background=['red','black','gray'][Math.floor(Math.random()*3)]
+c.style.animationDuration=(Math.random()*3+2)+'s'
+document.body.appendChild(c)
+setTimeout(()=>c.remove(),3000)
+}
 }
 </script>
 
